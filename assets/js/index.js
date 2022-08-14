@@ -29,7 +29,7 @@ function getUserInfo() {
         success: function (res) {
             if (res.status !== 0) return layui.layer.msg('获取用户信息失败！')
             renderAvatar(res.data)
-        },
+        }
         // // 不论成功还是失败，都会调用 complete 回调函数
         // complete: (res) => {
         //     // complete 中可以使用 responseJSON 拿到服务器响应的数据
